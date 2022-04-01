@@ -54,7 +54,7 @@ function Get-SPOSiteUsers {
         # Connecting to the tenant
         try {
             Write-Output "Connecting to $($AdminURL)..."
-            # Connect-SPOService -Url $AdminUrl
+            Connect-SPOService -Url $AdminUrl
         }
         catch [System.Exception] {
             Write-Error $_.Exception.Message
