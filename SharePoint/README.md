@@ -1,5 +1,5 @@
-# M365-Scripts
-These are the simple small scripts shared for solving basic tasks in Microsoft 365
+# SharePoint Scripts
+These are the simple small scripts shared for solving basic tasks in SharePoint
 
 ## 🚫 Disclaimer
 These scripts are delivere "as is", and I do expected you check them before running them in a production environment.
