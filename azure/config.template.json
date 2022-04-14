@@ -1,0 +1,13 @@
+{
+    "azure": {
+        "ResourceGroupName": "",
+        "ContainerName": "",
+        "Name": "",
+        "SkuName": "",
+        "Location": ""
+    },
+    "api": {
+        "key": "",
+        "secret": ""
+    }
+}
