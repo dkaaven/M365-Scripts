@@ -24,7 +24,7 @@
     Created:     2022-04-14
     Updated:     2022-04-14
     Version history:
-    1.0.0 - (2022-03-25) Script created
+    1.0.0 - (2022-04-14) Script created
 #>
 # Source Blob-storage https://docs.microsoft.com/en-us/azure/storage/blobs/blob-powershell
 function ApiToExcel {
@@ -81,7 +81,7 @@ function ApiToExcel {
     Created:     2022-04-14
     Updated:     2022-04-14
     Version history:
-    1.0.0 - (2022-03-25) Script created
+    1.0.0 - (2022-04-14) Script created
 #>
 # Source Blob-storage https://docs.microsoft.com/en-us/azure/storage/blobs/blob-powershell
 
@@ -133,7 +133,7 @@ function FileToBlob {
         Set-AzStorageBlobContent -File $Filename -Container $Config.Azure.ContainerName -Context $ctx
     }
     End {
-        Disconnect-AzConnect
+        Disconnect-AzAccount
     }
 }
 
