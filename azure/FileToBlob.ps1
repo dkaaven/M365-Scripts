@@ -40,10 +40,7 @@ function ApiToExcel {
         $module = "ImportExcel"
         Import-Module $module
         if (!(Get-Module -Name $module)) {
-            Write-Error -Message "This requires a module. Please run `"Install-Module -Name $module`" and restart terminal to continue." -Category NotInstalled
-            Start-Sleep -s 30
-            Exit
-        Import-Module -Name $Module
+            Write-Error -Message "This requires a module. Please run `"Install-Module -Name $module`" and restart terminal to continue." -Category NotInstalled -ErrorAction Stop
         }
     }
     Process {
@@ -102,20 +99,15 @@ function FileToBlob {
         $module = "Az"
         Import-Module $module
         if (!(Get-Module -Name $module)) {
-            Write-Error -Message "This requires a module. Please run `"Install-Module -Name $module`" and restart terminal to continue." -Category NotInstalled
-            Start-Sleep -s 30
-            Exit 1
+            Write-Error -Message "This requires a module. Please run `"Install-Module -Name $module`" and restart terminal to continue." -Category NotInstalled -ErrorAction Stop
         }
-        Import-Module -Name $Module
 
         #region - Connect to Azure
         try {
             Connect-AzAccount
         }
         catch [System.Exception] {
-            Write-Host $_.Exception.Message
-            Start-Sleep -s 30
-            Exit 1
+            Write-Host $_.Exception.Message -ErrorAction Stop
         }
         #endregion
 
