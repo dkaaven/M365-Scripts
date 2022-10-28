@@ -1,4 +1,23 @@
-# Inspired by: https://lazyadmin.nl/powershell/microsoft-teams-uninstall-reinstall-and-cleanup-guide-scripts/#:~:text=Press%20Windows%20key%20%2B%20R.%20Type%20%25appdata%25%20and,script%20below%20to%20remove%20the%20Microsoft%20Teams%20Cache.
+<#
+.SYNOPSIS
+    Clear teams cache files
+.DESCRIPTION
+    Close Teams, Delete Cache and restart Teams again
+
+.PARAMETER tenant
+    Clear-TeamsCache -Force
+
+.EXAMPLE
+    . .\Clear-TeamsCache.ps1
+.NOTES
+    FileName:    Clear-TeamsCache.ps1
+    Author:      Daniel Kåven
+    Contact:     @DKaaven
+    Created:     2022-03-30
+    Updated:     2022-03-30
+    Version history:
+    1.0.0 - (2022-03-30) Script created
+#>
 
 function Clear-TeamsCache {
     param (
@@ -55,3 +74,5 @@ function Clear-TeamsCache {
         Write-Host "Skipping Cache Cleanup" -ForegroundColor Blue
     }
 }
+
+Clear-TeamsCache
