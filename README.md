@@ -6,8 +6,7 @@ These scripts are delivere "as is", and I do expected you check them before runn
 Even though I do my best to put in failsafes in my live scripts, they are usually tested once or twice in my environment.
 
 ## ⭐ Proud commits
-A list with explaination of my public scripts that work and are useful.
+These are some scripts I'm happy with.
 
-### Get-TenantID.ps1
-A simple function to extract the tenant ID from the domain. This function can easily be implemented in other scripts.
-
+* azure / Get-TenantID.ps1
+* teams / Clear-TeamsCache.ps1
