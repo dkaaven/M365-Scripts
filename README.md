@@ -9,5 +9,5 @@ Even though I do my best to put in failsafes in my live scripts, they are usuall
 These are some scripts I'm happy with.
 
 * azure / Get-TenantID.ps1
-* endpoint / Set-DeviceOwner.ps1
+* endpoint / Set-DeviceOwnership.ps1
 * teams / Clear-TeamsCache.ps1
