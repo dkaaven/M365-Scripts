@@ -26,6 +26,10 @@ function Clear-TeamsCache {
         [switch]$ForceSkip = $false
     )
 
+    # List of folders to delete
+    $folders = @("blob_storage", "databases", "cache", "gpucache", "Indexeddb", "Local Storage", "tmp")
+
+    # Create a Force function to hide promt
     if ($ForceSkip -eq $true) {
         $ClearCache = "Y"
     }
@@ -46,9 +50,9 @@ function Clear-TeamsCache {
             Write-Error $_.Exception.Message
         }
         
+
         Write-Host "Clearing Teams Disk Cache" -ForegroundColor Yellow
 
-        $folders = @("blob_storage", "databases", "cache", "gpucache", "Indexeddb", "Local Storage", "tmp")
         $count = 0
         $percentTotal = $folders.Count
 
