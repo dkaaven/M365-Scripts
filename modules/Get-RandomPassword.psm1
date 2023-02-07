@@ -35,24 +35,17 @@ function Get-RandomPassword {
         [validateset("AlphaNumeric", "SQLCompliant")]
         [string]$Compliancy
     )
-
+    $Characters = [char]65..[char]90 # A..Z
+    $Characters += [char]97..[char]122 # a..z
+    $Characters += [char]48..[char]57 # 0..9
     Switch ($Compliancy){
         "AlphaNumeric" {
-            $Characters = [char]65..[char]90 # A..Z
-            $Characters += [char]97..[char]122 # a..z
-            $Characters += [char]48..[char]57 # 0..9
         }
         "SQLCompliant" {
-            $Characters = [char]65..[char]90 # A..Z
-            $Characters += [char]97..[char]122 # a..z
-            $Characters += [char]48..[char]57 # 0..9
             $Characters += [char]33 #!
             $Characters += [char]35..[char]37 # #$%    
         }
         default {
-            $Characters = [char]65..[char]90 # A..Z
-            $Characters += [char]97..[char]122 # a..z
-            $Characters += [char]48..[char]57 # 0..9
             $Characters += [char]33..[char]47 # !"#&%'()*+,-./
         }
     }
