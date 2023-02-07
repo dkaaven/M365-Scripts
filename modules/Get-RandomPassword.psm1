@@ -11,7 +11,7 @@
 
 .EXAMPLE
     Get-RandomPassword 32
-    Get-RandomPassword 64 Alphanumeric
+    Get-RandomPassword 64 AlphaNumeric
     Get-RandomPassword 128 SQLCompliant
 
 .NOTES
