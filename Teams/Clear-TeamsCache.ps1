@@ -27,7 +27,7 @@ function Clear-TeamsCache {
     )
 
     # List of folders to delete
-    $folders = @("blob_storage", "databases", "cache", "gpucache", "Indexeddb", "Local Storage", "tmp")
+    $folders = @("blob_storage", "databases", "Cache", "GPUCache", "Indexeddb", "Local Storage", "tmp")
 
     # Create a Force function to hide promt
     if ($ForceSkip -eq $true) {
