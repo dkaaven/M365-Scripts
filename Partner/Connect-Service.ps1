@@ -18,9 +18,10 @@
     Author:      Daniel Kåven
     Contact:     @DKaaven
     Created:     2022-03-25
-    Updated:     2022-03-25
+    Updated:     2023-12-20
     Version history:
     1.0.0 - (2022-03-25) Script created
+    1.0.1 - (2023-12-20) Added supporting functions into same file.
 #>
 
 # Inspired by: https://seanmcavinue.net/2020/11/19/using-delegated-access-permissions-in-powershell-to-manage-all-microsoft-365-services/
